@@ -1,0 +1,22 @@
+[
+  {
+    "model": "CNN",
+    "device": "CPU",
+    "test_images": 40,
+    "repetitions": 5,
+    "total_inferences": 200,
+    "avg_latency_ms_per_image": 20.272248190000255,
+    "throughput_images_per_second": 49.328519985922064,
+    "measurement_note": "batch size 1; 5 passes over 40 test images; includes model forward pass only"
+  },
+  {
+    "model": "ResNet18",
+    "device": "CPU",
+    "test_images": 40,
+    "repetitions": 5,
+    "total_inferences": 200,
+    "avg_latency_ms_per_image": 27.381506174999686,
+    "throughput_images_per_second": 36.52100047414618,
+    "measurement_note": "batch size 1; 5 passes over 40 test images; includes model forward pass only"
+  }
+]

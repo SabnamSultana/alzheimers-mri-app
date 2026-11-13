@@ -1,0 +1,115 @@
+{
+  "benchmark_type": "trained_final_checkpoint_cuda_inference",
+  "hardware": "Tesla T4",
+  "torch_version": "2.14.1+cu130",
+  "python_version": "3.13.16",
+  "cuda_version": "13.0",
+  "test_samples": 40,
+  "classes": [
+    "Mild Demented",
+    "Moderate Demented",
+    "Non Demented",
+    "Very Mild Demented"
+  ],
+  "input_size": [
+    3,
+    224,
+    224
+  ],
+  "timing_method": "CUDA events with synchronization",
+  "note": "Forward-pass only; test batches are preloaded to GPU, excluding disk and host-to-device transfer.",
+  "models": {
+    "CNN": [
+      {
+        "batch_size_setting": 1,
+        "warmup_batches": 10,
+        "repeats_over_full_test_set": 30,
+        "images_processed": 1200,
+        "total_inference_seconds": 0.8882957763671875,
+        "latency_ms_per_image": 0.7402464803059896,
+        "throughput_images_per_second": 1350.9013910969738,
+        "peak_allocated_gpu_memory_mb": 45.5400390625,
+        "peak_reserved_gpu_memory_mb": 70.0
+      },
+      {
+        "batch_size_setting": 8,
+        "warmup_batches": 10,
+        "repeats_over_full_test_set": 30,
+        "images_processed": 1200,
+        "total_inference_seconds": 0.8787162475585938,
+        "latency_ms_per_image": 0.7322635396321615,
+        "throughput_images_per_second": 1365.6285556731812,
+        "peak_allocated_gpu_memory_mb": 139.6845703125,
+        "peak_reserved_gpu_memory_mb": 206.0
+      },
+      {
+        "batch_size_setting": 16,
+        "warmup_batches": 10,
+        "repeats_over_full_test_set": 30,
+        "images_processed": 1200,
+        "total_inference_seconds": 0.78616748046875,
+        "latency_ms_per_image": 0.6551395670572917,
+        "throughput_images_per_second": 1526.3923143761983,
+        "peak_allocated_gpu_memory_mb": 237.9033203125,
+        "peak_reserved_gpu_memory_mb": 316.0
+      },
+      {
+        "batch_size_setting": 32,
+        "warmup_batches": 10,
+        "repeats_over_full_test_set": 30,
+        "images_processed": 1200,
+        "total_inference_seconds": 0.8027658081054687,
+        "latency_ms_per_image": 0.6689715067545573,
+        "throughput_images_per_second": 1494.8319770021171,
+        "peak_allocated_gpu_memory_mb": 443.0908203125,
+        "peak_reserved_gpu_memory_mb": 630.0
+      }
+    ],
+    "ResNet18": [
+      {
+        "batch_size_setting": 1,
+        "warmup_batches": 10,
+        "repeats_over_full_test_set": 30,
+        "images_processed": 1200,
+        "total_inference_seconds": 3.078846435546875,
+        "latency_ms_per_image": 2.5657053629557294,
+        "throughput_images_per_second": 389.75636658762164,
+        "peak_allocated_gpu_memory_mb": 99.84326171875,
+        "peak_reserved_gpu_memory_mb": 272.0
+      },
+      {
+        "batch_size_setting": 8,
+        "warmup_batches": 10,
+        "repeats_over_full_test_set": 30,
+        "images_processed": 1200,
+        "total_inference_seconds": 1.348073486328125,
+        "latency_ms_per_image": 1.1233945719401042,
+        "throughput_images_per_second": 890.1591880339946,
+        "peak_allocated_gpu_memory_mb": 127.38232421875,
+        "peak_reserved_gpu_memory_mb": 244.0
+      },
+      {
+        "batch_size_setting": 16,
+        "warmup_batches": 10,
+        "repeats_over_full_test_set": 30,
+        "images_processed": 1200,
+        "total_inference_seconds": 1.0874146728515626,
+        "latency_ms_per_image": 0.9061788940429687,
+        "throughput_images_per_second": 1103.5348611337029,
+        "peak_allocated_gpu_memory_mb": 180.97607421875,
+        "peak_reserved_gpu_memory_mb": 244.0
+      },
+      {
+        "batch_size_setting": 32,
+        "warmup_batches": 10,
+        "repeats_over_full_test_set": 30,
+        "images_processed": 1200,
+        "total_inference_seconds": 1.0579140625,
+        "latency_ms_per_image": 0.8815950520833333,
+        "throughput_images_per_second": 1134.3076366375458,
+        "peak_allocated_gpu_memory_mb": 288.16357421875,
+        "peak_reserved_gpu_memory_mb": 440.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,3 @@
+model,accuracy,macro_f1,weighted_f1
+CNN,1.0,1.0,1.0
+ResNet18,1.0,1.0,1.0

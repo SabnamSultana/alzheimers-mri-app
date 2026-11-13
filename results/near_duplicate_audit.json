@@ -1,0 +1,18 @@
+{
+  "threshold_corr": 0.98,
+  "note": "Pearson correlation of 32x32 grayscale thumbnails vs nearest TRAIN image.",
+  "val": {
+    "n": 40,
+    "min": 0.9729872345924377,
+    "mean": 0.9911796450614929,
+    "max": 0.9994820356369019,
+    "near_duplicates_of_train": 36
+  },
+  "test": {
+    "n": 40,
+    "min": 0.9701294898986816,
+    "mean": 0.9913461804389954,
+    "max": 0.9995853304862976,
+    "near_duplicates_of_train": 35
+  }
+}

@@ -1,0 +1,13 @@
+model,class,precision,recall,f1-score,support
+CNN,Mild Demented,1.0,1.0,1.0,10
+CNN,Moderate Demented,1.0,1.0,1.0,10
+CNN,Non Demented,1.0,1.0,1.0,10
+CNN,Very Mild Demented,1.0,1.0,1.0,10
+CNN,macro avg,1.0,1.0,1.0,40
+CNN,weighted avg,1.0,1.0,1.0,40
+ResNet18,Mild Demented,1.0,1.0,1.0,10
+ResNet18,Moderate Demented,1.0,1.0,1.0,10
+ResNet18,Non Demented,1.0,1.0,1.0,10
+ResNet18,Very Mild Demented,1.0,1.0,1.0,10
+ResNet18,macro avg,1.0,1.0,1.0,40
+ResNet18,weighted avg,1.0,1.0,1.0,40

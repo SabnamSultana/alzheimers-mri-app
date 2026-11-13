@@ -1,0 +1,5 @@
+Model,Device,Training_Time_sec,Average_Epoch_Time_sec,Validation_Accuracy_percent,Test_Accuracy_percent,Inference_Latency_ms,Throughput_images_sec,Peak_GPU_Memory_MB
+CNN,CPU,29.287,14.643,25.0,25.0,31.637,31.61,
+CNN,CUDA,3.573,1.786,25.0,25.0,0.475,2107.41,406.61
+ResNet18,CPU,48.577,24.288,42.5,42.5,47.246,21.17,
+ResNet18,CUDA,1.763,0.881,25.0,25.0,0.799,1251.33,558.29

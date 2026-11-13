@@ -1,0 +1,46 @@
+[
+    {
+        "Model": "CNN",
+        "Device": "CPU",
+        "Training_Time_sec": 29.287,
+        "Average_Epoch_Time_sec": 14.643,
+        "Validation_Accuracy_percent": 25.0,
+        "Test_Accuracy_percent": 25.0,
+        "Inference_Latency_ms": 31.637,
+        "Throughput_images_sec": 31.61,
+        "Peak_GPU_Memory_MB": null
+    },
+    {
+        "Model": "CNN",
+        "Device": "CUDA",
+        "Training_Time_sec": 3.573,
+        "Average_Epoch_Time_sec": 1.786,
+        "Validation_Accuracy_percent": 25.0,
+        "Test_Accuracy_percent": 25.0,
+        "Inference_Latency_ms": 0.475,
+        "Throughput_images_sec": 2107.41,
+        "Peak_GPU_Memory_MB": 406.61
+    },
+    {
+        "Model": "ResNet18",
+        "Device": "CPU",
+        "Training_Time_sec": 48.577,
+        "Average_Epoch_Time_sec": 24.288,
+        "Validation_Accuracy_percent": 42.5,
+        "Test_Accuracy_percent": 42.5,
+        "Inference_Latency_ms": 47.246,
+        "Throughput_images_sec": 21.17,
+        "Peak_GPU_Memory_MB": null
+    },
+    {
+        "Model": "ResNet18",
+        "Device": "CUDA",
+        "Training_Time_sec": 1.763,
+        "Average_Epoch_Time_sec": 0.881,
+        "Validation_Accuracy_percent": 25.0,
+        "Test_Accuracy_percent": 25.0,
+        "Inference_Latency_ms": 0.799,
+        "Throughput_images_sec": 1251.33,
+        "Peak_GPU_Memory_MB": 558.29
+    }
+]

@@ -1,0 +1,31 @@
+{
+  "counts": {
+    "train": {
+      "Mild Demented": 40,
+      "Moderate Demented": 40,
+      "Non Demented": 40,
+      "Very Mild Demented": 40
+    },
+    "val": {
+      "Mild Demented": 10,
+      "Moderate Demented": 10,
+      "Non Demented": 10,
+      "Very Mild Demented": 10
+    },
+    "test": {
+      "Mild Demented": 10,
+      "Moderate Demented": 10,
+      "Non Demented": 10,
+      "Very Mild Demented": 10
+    }
+  },
+  "total_images": 240,
+  "classes": [
+    "Mild Demented",
+    "Moderate Demented",
+    "Non Demented",
+    "Very Mild Demented"
+  ],
+  "exact_duplicate_hashes_across_splits": 0,
+  "duplicate_examples": []
+}

@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+venv/
+.venv/
+env/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Streamlit secrets (never upload)
+.streamlit/secrets.toml
+
+# Big or unneeded files (not required for the deployed app)
+dataset/processed/
+member4_*.pth
+*.zip
+demo_video/*.mp4
